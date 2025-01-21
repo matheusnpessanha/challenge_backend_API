@@ -3,3 +3,4 @@ uvicorn
 motor
 oauthlib
 pymongo
+PyJWT==2.8.0
