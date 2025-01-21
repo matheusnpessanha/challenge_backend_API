@@ -6,3 +6,4 @@ pymongo
 PyJWT==2.8.0
 passlib==1.7.4
 pydantic[email]
+python-multipart
