@@ -19,7 +19,9 @@ database = os.getenv("MONGO_DB")
 username = os.getenv("MONGO_USER")
 password = os.getenv("MONGO_PASS")
 
-client = AsyncIOMotorClient(f"mongodb://{username}:{password}@{host}:{port}/{database}?authSource=admin")
+#client = AsyncIOMotorClient(f"mongodb://{username}:{password}@{host}:{port}/{database}?authSource=admin")
+client = AsyncIOMotorClient(f"mongodb://{username}:{password}@localhost:27017/{database}?authSource=admin")
+
 db = client[database]
 users_collection = db["users"]
 
